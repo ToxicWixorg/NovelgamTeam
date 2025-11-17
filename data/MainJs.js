@@ -33,7 +33,7 @@ let slideindex = 0;
 let slides = [];
 
 function initgamedatas() {
-  fetch("NovelgamTeam/asset/game_data/GameData.json")
+  fetch("asset/game_data/GameData.json")
     .then((response) => response.json())
     .then((games) => {
       if (games.length > 0) {
@@ -108,6 +108,7 @@ function randintnum(a, b) {
   b++;
   return Math.floor(Math.random() * (b - a) + a);
 }
+
 
 
 

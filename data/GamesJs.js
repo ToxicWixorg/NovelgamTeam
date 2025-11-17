@@ -119,7 +119,7 @@ function createbox(i, game) {
     container.classList.add("left");
   }
   const img = document.createElement("img");
-  img.setAttribute("src", `asset/${game.slide}/1.png`);
+  img.setAttribute("src", `asset/${game.slide}/1.webp`);
   img.classList.add("tumbnail");
   const detailsspan = document.createElement("span");
   detailsspan.classList.add("detailscontainer");
@@ -212,7 +212,7 @@ function create_game_details_box(game, i) {
       <div class="Game_T_Container">
         <img class="tak_image" src="./asset/${
           game.slide
-        }/1.png" alt="thumbnail">
+        }/1.webp" alt="thumbnail">
       </div>
       <button onclick="download_game('${
         game.enname
@@ -254,42 +254,42 @@ function create_game_details_box(game, i) {
             : ""
         }
         <label for="S1">
-          <img class="Slide" src="./asset/${game.slide}/1.png" alt="thumbnail">
+          <img class="Slide" src="./asset/${game.slide}/1.webp" alt="thumbnail">
         </label>
         <label for="S2">
-          <img class="Slide" src="./asset/${game.slide}/2.png" alt="thumbnail">
+          <img class="Slide" src="./asset/${game.slide}/2.webp" alt="thumbnail">
         </label>
         <label for="S3">
-          <img class="Slide" src="./asset/${game.slide}/3.png" alt="thumbnail">
+          <img class="Slide" src="./asset/${game.slide}/3.webp" alt="thumbnail">
         </label>
         <label for="S4">
-          <img class="Slide" src="./asset/${game.slide}/4.png" alt="thumbnail">
+          <img class="Slide" src="./asset/${game.slide}/4.webp" alt="thumbnail">
         </label>
         <label for="S5">
-          <img class="Slide" src="./asset/${game.slide}/5.png" alt="thumbnail">
+          <img class="Slide" src="./asset/${game.slide}/5.webp" alt="thumbnail">
         </label>
       </div>
       <div class="dots">
         ${
           game.T === "yes"
-            ? '<label for="T" style="background-image: url(./asset/TW.png);"></label>'
+            ? '<label for="T" style="background-image: url(./asset/TW.webp);"></label>'
             : ""
         }
         <label for="S1" style="background-image: url(./asset/${
           game.slide
-        }/1.png);"></label>
+        }/1.webp);"></label>
         <label for="S2" style="background-image: url(./asset/${
           game.slide
-        }/2.png);"></label>
+        }/2.webp);"></label>
         <label for="S3" style="background-image: url(./asset/${
           game.slide
-        }/3.png);"></label>
+        }/3.webp);"></label>
         <label for="S4" style="background-image: url(./asset/${
           game.slide
-        }/4.png);"></label>
+        }/4.webp);"></label>
         <label for="S5" style="background-image: url(./asset/${
           game.slide
-        }/5.png);"></label>
+        }/5.webp);"></label>
       </div>
 
     </div>
@@ -308,5 +308,6 @@ function download_game(name) {
 
   window.alert(text);
 }
+
 
 

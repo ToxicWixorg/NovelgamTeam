@@ -1,0 +1,39 @@
+@font-face {
+    font-family: vazirmatn;
+    src: url(fonts/Vazirmatn-Medium.ttf);
+}
+
+
+#MainMenu {
+    padding: 1rem;
+
+}
+
+#SiteName {
+    color: #c1c1c1;
+    font-weight: lighter;
+    font-size: 2.2rem;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    text-align: center;
+    text-shadow: 0 5px 10px rgb(130, 43, 145);
+    text-decoration: underline;
+    font-family: 'Gabriola';
+}
+
+main p {
+    margin-top: 1rem;
+    color: white;
+    padding: 0.5rem 0;
+    border-radius: 20px;
+    font-family: "vazirmatn";
+}
+
+.problem {
+    color: #ff0303;
+    text-decoration: underline;
+}
+
+main p a {
+    color: #3333f3;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NovelGam</title>
+  <link rel="stylesheet" href="data/index.css" />
+  <link rel="stylesheet" href="data/GamesCss.css" />
+</head>
+
+<body>
+  <header id="Header">
+    <div class="header_detail_container">
+      <h1 class="teamname">
+        Novelgam <sub><small style="color: #aaaaaa">team</small></sub>
+      </h1>
+      <nav>
+        <a href="index.html" class="header_butt">
+          <img src="./data/icons/homepage.png" />
+          <p>منو اصلی</p>
+        </a>
+        <a href="Games.html" class="header_butt active">بازی ها</a>
+        <a href="AboutUs.html" class="header_butt">درباره ما</a>
+      </nav>
+    </div>
+    <div class="headerlogoimage">
+      <img src="./data/icons/teamicon-2.jpg" alt="team logo" />
+    </div>
+  </header>
+  <main id="MainMenu">
+    <section id="searchsection">
+      <input type="text" id="GameSearchBox" placeholder="نام بازی" dir="auto" />
+      <button id="GameSearchButt" dir="rtl">جست و جو</button>
+    </section>
+    <hr style="margin: 1rem 0rem; border: 1px solid #dfdfdfb8" />
+    <h4 id="searchingprompt" dir="rtl"></h4>
+  </main>
+  <footer id="Footer">
+    <span class="footer_span">
+      <h3 dir="rtl">پیشنهاد ما به شما</h3>
+      <hr />
+      <div id="sugguest_games" class="sugguest_games"></div>
+    </span>
+    <span class="footer_span">
+      <h3 dir="rtl">ارتباط با ما</h3>
+      <hr />
+      <p dir="rtl" class="tel_p">
+        تلگرام : <a href="https://t.me/novelgam">@novelgam</a>
+      </p>
+    </span>
+  </footer>
+  <script src="data/GamesJs.js"></script>
+</body>
+
+</html>

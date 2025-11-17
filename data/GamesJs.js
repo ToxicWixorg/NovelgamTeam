@@ -58,7 +58,7 @@ GameSearchBox.addEventListener("input", (event) => {
   clearMainMenu();
   if (target == "") {
     searchingprompt.textContent = "";
-    fetch("../asset/game_data/GameData.json")
+    fetch("https://toxicwixorg.github.io/NovelgamTeam/asset/game_data/GameData.json")
       .then((response) => response.json())
       .then((games) => {
         if (games.length > 0) {
@@ -75,7 +75,7 @@ GameSearchBox.addEventListener("input", (event) => {
   } else {
     searchingprompt.textContent = `جست و جو...`;
     let results = [];
-    fetch("../asset/game_data/GameData.json")
+    fetch("https://toxicwixorg.github.io/NovelgamTeam/asset/game_data/GameData.json")
       .then((response) => response.json())
       .then((games) => {
         if (games.length > 0) {
@@ -180,7 +180,7 @@ function showgame(gameenname) {
   clearMainMenu();
   document.title = gameenname;
 
-  fetch("../asset/game_data/GameData.json")
+  fetch("https://toxicwixorg.github.io/NovelgamTeam/asset/game_data/GameData.json")
     .then((response) => response.json())
     .then((games) => {
       for (let i in games) {
@@ -308,4 +308,5 @@ function download_game(name) {
 
   window.alert(text);
 }
+
 

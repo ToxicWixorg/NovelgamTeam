@@ -8,7 +8,7 @@ const GameSearchButt = document.getElementById("GameSearchButt");
 
 function initGames() {
   document.title = "NovelGam - Games";
-  fetch("../asset/game_data/GameData.json")
+  fetch("https://toxicwixorg.github.io/NovelgamTeam/asset/game_data/GameData.json")
     .then((response) => response.json())
     .then((games) => {
       if (games.length > 0) {
@@ -308,3 +308,4 @@ function download_game(name) {
 
   window.alert(text);
 }
+

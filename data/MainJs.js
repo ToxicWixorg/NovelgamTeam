@@ -56,7 +56,7 @@ function initgamedatas() {
 function CreateSlideLabelHTML(games) {
   return `
     <label class="slide" for="S1">
-        <img class="slide_thumbnail" src="asset/${games[0].slide}/1.png" alt="${
+        <img class="slide_thumbnail" src="asset/${games[0].slide}/1.webp" alt="${
     games[0].slide
   }">
         <span class="slide_decription">
@@ -66,7 +66,7 @@ function CreateSlideLabelHTML(games) {
         </span>
     </label>
     <label class="slide" for="S2">
-        <img class="slide_thumbnail" src="asset/${games[1].slide}/1.png" alt="${
+        <img class="slide_thumbnail" src="asset/${games[1].slide}/1.webp" alt="${
     games[1].slide
   }">
         <span class="slide_decription">
@@ -76,7 +76,7 @@ function CreateSlideLabelHTML(games) {
         </span>
     </label>
     <label class="slide" for="S3">
-        <img class="slide_thumbnail" src="asset/${games[2].slide}/1.png" alt="${
+        <img class="slide_thumbnail" src="asset/${games[2].slide}/1.webp" alt="${
     games[2].slide
   }">
         <span class="slide_decription">
@@ -86,7 +86,7 @@ function CreateSlideLabelHTML(games) {
         </span>
     </label>
     <label class="slide" for="S4">
-        <img class="slide_thumbnail" src="asset/${games[3].slide}/1.png" alt="${
+        <img class="slide_thumbnail" src="asset/${games[3].slide}/1.webp" alt="${
     games[3].slide
   }">
         <span class="slide_decription">
@@ -96,7 +96,7 @@ function CreateSlideLabelHTML(games) {
         </span>
     </label>
     <label class="slide" for="S5">
-        <img class="slide_thumbnail" src="asset/TW.png">
+        <img class="slide_thumbnail" src="asset/TW.webp">
         <span class="slide_decription">
             <a href="./Games.html">All Games</a>
         </span>
@@ -108,6 +108,7 @@ function randintnum(a, b) {
   b++;
   return Math.floor(Math.random() * (b - a) + a);
 }
+
 
 
 
